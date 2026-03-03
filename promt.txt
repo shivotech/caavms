@@ -1,3 +1,30 @@
-remove all industries cards currently used and use the ss, i want small small cards having icons
-and below its text same as given in the ss take all industries and icons from the ss 
-also use the current designing, colors of cards same
+now i want that there should be drop down for the services which shows this 4 things "Audit & Assurance­, Taxation (Direct & Indirect), Corporate & Legal Advisory, Financial & Management Consultancy"
+also this 4 headings should have side drop down showing there individual sub headings 
+as given here "I. Audit & Assurance­
+    • Statutory Audit: Compliance with Companies Act 2013 and various statutes.
+    • Internal & Management Audit: Operational efficiency, internal control reviews, and risk assessment.
+    • Bank Audits: Statutory Branch Audits (SBA), Concurrent Audits, Revenue Audits, and Stock Audits.
+    • Tax Audit: Under Section 44AB of the Income Tax Act.
+    • Forensic Audit: Fraud investigation, fund-trail analysis, and litigation support.
+    • Information System (IS) Audit: Security audits, IT control mapping, and CISA-certified reviews.
+II. Taxation (Direct & Indirect)
+    • Income Tax: ITR Filing, Tax Planning for Corporates/Individuals, and TDS/TCS compliance.
+    • Tax Litigation: Representation before CIT (Appeals) and Income Tax Appellate Tribunal (ITAT).
+    • GST Advisory: Registration, Monthly/Annual Returns (GSTR-9/9C), and Input Tax Credit (ITC) optimization.
+    • GST Litigation: Handling Show Cause Notices (SCN), appeals, and departmental audits.
+    • International Tax: NRI Taxation, Double Taxation Avoidance Agreement (DTAA) advisory, and Form 15CA/CB.
+III. Corporate & Legal Advisory
+    • Business Setup: Incorporation of Pvt Ltd, LLP, Section 8 (NGO), and OPC.
+    • ROC Compliance: Maintaining Statutory Registers, Filing Annual Returns, and Director-related changes.
+    • Transaction Advisory: Mergers, Acquisitions, and Business Restructuring.
+    • Insolvency & Bankruptcy: Advisory services related to the IBC framework.
+IV. Financial & Management Consultancy
+    • Project Financing: Preparation of Project Reports, CMA Data, and Loan Syndication.
+    • Due Diligence: Financial and Legal due diligence for investments.
+    • Startup Services: Startup India registration, Pitch Decks, and Valuation certificates.
+    • Outsourced CFO: Virtual CFO services for SMEs and growing businesses."
+ also on clicking the sub heading or heding then it should
+ be route on the individual services like on click to
+ "Audit & Assurance­ or its sub heading Statutory Audit" then is should 
+ redirect to the "services/mainheading" make a proper 
+ todos to implement it 

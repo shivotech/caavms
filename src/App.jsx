@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Team from './pages/Team';
 import Services from './pages/Services';
+import ServiceDetail from './pages/ServiceDetail';
 import Industries from './pages/Industries';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
