@@ -17,15 +17,14 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
     >
-      {/* Top Info Bar */}
-      <div className="text-white py-2 text-sm" style={{ backgroundColor: '#023E60' }}>
+      {/* Top Info Bar - Hidden on mobile */}
+      <div className="hidden lg:block text-white py-2 text-sm" style={{ backgroundColor: '#023E60' }}>
         <div className="container-custom">
           <div className="flex items-center justify-between gap-3">
             {/* Left Side - Address */}
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-base" style={{ color: '#4ade80' }} />
-              <span className="hidden lg:inline">Office No. 8 6th Floor, Bansal One, Near Rani Kamlapati Station, Bhopal</span>
-              <span className="lg:hidden">Bhopal Office</span>
+              <span>Office No. 8 6th Floor, Bansal One, Near Rani Kamlapati Station, Bhopal</span>
             </div>
 
             {/* Right Side - Info Items */}
@@ -33,17 +32,15 @@ const Header = () => {
               {/* Working Hours */}
               <div className="flex items-center gap-2">
                 <FaClock className="text-base" style={{ color: '#4ade80' }} />
-                <span className="hidden md:inline">Mon - Sat 10.00 - 19.00</span>
-                <span className="md:hidden">10-19</span>
+                <span>Mon - Sat 10.00 - 19.00</span>
               </div>
 
               {/* Email */}
               <div className="flex items-center gap-2">
                 <FaEnvelope className="text-base" style={{ color: '#4ade80' }} />
-                <a href="mailto:rohit@jainrs.com" className="text-white hover:text-gray-200 transition-colors hidden sm:inline">
+                <a href="mailto:rohit@jainrs.com" className="text-white hover:text-gray-200 transition-colors">
                   rohit@jainrs.com
                 </a>
-                <span className="sm:hidden">Email</span>
               </div>
 
               {/* Phone */}

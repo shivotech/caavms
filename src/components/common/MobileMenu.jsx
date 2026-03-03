@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronDown, FaChevronUp, FaMapMarkerAlt, FaClock, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { servicesNavData } from '../../data/servicesNavData';
 
 const MobileMenu = () => {
@@ -14,6 +14,9 @@ const MobileMenu = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
+  ];
+
+  const navLinksAfterServices = [
     { path: '/careers', label: 'Careers' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -83,7 +86,7 @@ const MobileMenu = () => {
                 stiffness: 300, 
                 damping: 30 
               }}
-              className="fixed top-0 right-0 bottom-0 w-64 bg-white shadow-2xl z-50 overflow-y-auto"
+              className="fixed top-0 right-0 bottom-0 w-80 max-w-[90vw] bg-white shadow-2xl z-50 overflow-y-auto"
             >
               {/* Close Button */}
               <div className="flex justify-end p-4 border-b border-gray-200">
@@ -98,6 +101,7 @@ const MobileMenu = () => {
               
               {/* Navigation Links */}
               <nav className="flex flex-col p-4">
+                {/* Nav links before Services */}
                 {navLinks.map((link, index) => (
                   <motion.div
                     key={link.path}
@@ -217,10 +221,91 @@ const MobileMenu = () => {
                     )}
                   </AnimatePresence>
                 </motion.div>
+
+                {/* Nav links after Services */}
+                {navLinksAfterServices.map((link, index) => (
+                  <motion.div
+                    key={link.path}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: (navLinks.length + 1 + index) * 0.1 }}
+                    className="mt-1"
+                  >
+                    <Link
+                      to={link.path}
+                      onClick={closeMenu}
+                      className={`
+                        block px-4 py-3 rounded-lg font-medium transition-all duration-300
+                        ${isActive(link.path) 
+                          ? 'bg-primary-600 text-white shadow-md' 
+                          : 'text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                        }
+                      `}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
               </nav>
               
+              {/* Contact Info Section */}
+              <div className="p-4 mt-4 border-t border-gray-200 space-y-3">
+                {/* Office Address */}
+                <div className="flex items-start gap-3 text-sm">
+                  <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                  <div>
+                    <p className="font-semibold text-gray-900 mb-1">Bhopal Office</p>
+                    <p className="text-gray-600">Office No. 8, 6th Floor, Bansal One, Near Rani Kamlapati Station, Bhopal</p>
+                  </div>
+                </div>
+
+                {/* Working Hours */}
+                <div className="flex items-center gap-3 text-sm">
+                  <FaClock style={{ color: '#159645' }} />
+                  <div>
+                    <p className="font-semibold text-gray-900">Working Hours</p>
+                    <p className="text-gray-600">Mon - Sat: 10:00 AM - 7:00 PM</p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center gap-3 text-sm">
+                  <FaEnvelope style={{ color: '#159645' }} />
+                  <div>
+                    <p className="font-semibold text-gray-900">Email</p>
+                    <a href="mailto:rohit@jainrs.com" className="text-primary-600 hover:text-primary-700">
+                      rohit@jainrs.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center gap-3 text-sm">
+                  <FaPhone style={{ color: '#159645' }} />
+                  <div>
+                    <p className="font-semibold text-gray-900">Phone</p>
+                    <a href="tel:+919981416845" className="text-primary-600 hover:text-primary-700">
+                      +91 9981416845
+                    </a>
+                  </div>
+                </div>
+
+                {/* Branches */}
+                <div className="flex items-start gap-3 text-sm">
+                  <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                  <div>
+                    <p className="font-semibold text-gray-900 mb-2">Our Branches</p>
+                    <div className="space-y-1 text-gray-600">
+                      <p>• Indore</p>
+                      <p>• Mumbai</p>
+                      <p>• New Delhi</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Contact Button */}
-              <div className="p-4 mt-4 border-t border-gray-200">
+              <div className="p-4 border-t border-gray-200">
                 <Link
                   to="/contact"
                   onClick={closeMenu}
