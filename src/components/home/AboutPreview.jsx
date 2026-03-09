@@ -28,7 +28,7 @@ const AboutPreview = () => {
             transition={{ duration: 0.6 }}
             className="inline-block mb-6"
           >
-            <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider bg-primary-100 px-6 py-3 rounded-full">
+            <span className="font-semibold text-sm uppercase tracking-wider px-6 py-3 rounded-full" style={{ color: '#ec812f', backgroundColor: '#fff5ed' }}>
               Who We Are
             </span>
           </motion.div>

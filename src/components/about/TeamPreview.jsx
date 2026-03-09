@@ -80,7 +80,7 @@ const TeamPreview = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#023E60' }}>
             Meet Our Team
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
             Talented professionals dedicated to your success
           </p>
         </motion.div>

@@ -86,7 +86,7 @@ export const contactMethods = [
     type: "Location",
     value: "Bhopal, Madhya Pradesh, India",
     icon: "FaMapMarkerAlt",
-    link: null,
+    link: "https://www.google.com/maps/place/AVMS+%26+ASSOCIATES,+CHARTERED+ACCOUNTANTS/@23.2357873,77.4338487,17z/data=!3m1!4b1!4m6!3m5!1s0x397c43b7187d17cb:0xf3ca4f54d11cdd88!8m2!3d23.2357873!4d77.4338487!16s%2Fg%2F11rhnscqw4?entry=ttu&g_ep=EgoyMDI2MDMwNS4wIKXMDSoASAFQAw%3D%3D",
     description: "Headquartered in Bhopal"
   }
 ];

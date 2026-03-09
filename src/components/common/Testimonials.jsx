@@ -59,7 +59,7 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ color: '#023E60' }}>
             Client Testimonials
           </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
             What our clients say about our professional services
           </p>
         </motion.div>

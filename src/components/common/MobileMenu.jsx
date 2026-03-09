@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaChevronDown, FaChevronUp, FaMapMarkerAlt, FaClock, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaBars, FaTimes, FaChevronDown, FaChevronUp, FaMapMarkerAlt, FaEnvelope, FaPhone, FaLinkedin, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { servicesNavData } from '../../data/servicesNavData';
 
 const MobileMenu = () => {
@@ -255,16 +255,25 @@ const MobileMenu = () => {
                   <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Bhopal Office</p>
-                    <p className="text-gray-600">Office No. 8, 6th Floor, Bansal One, Near Rani Kamlapati Station, Bhopal</p>
+                    <p className="text-gray-600">163, Rama Complex, MP Nagar Zone 1, Bhopal</p>
                   </div>
                 </div>
 
-                {/* Working Hours */}
+                {/* Social Media Icons */}
                 <div className="flex items-center gap-3 text-sm">
-                  <FaClock style={{ color: '#159645' }} />
-                  <div>
-                    <p className="font-semibold text-gray-900">Working Hours</p>
-                    <p className="text-gray-600">Mon - Sat: 10:00 AM - 7:00 PM</p>
+                  <div className="flex gap-4">
+                    <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                      <FaLinkedin size={24} style={{ color: '#159645' }} />
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                      <FaFacebookF size={24} style={{ color: '#159645' }} />
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                      <FaInstagram size={24} style={{ color: '#159645' }} />
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                      <FaTwitter size={24} style={{ color: '#159645' }} />
+                    </a>
                   </div>
                 </div>
 
@@ -295,7 +304,7 @@ const MobileMenu = () => {
                   <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-2">Our Branches</p>
-                    <div className="space-y-1 text-gray-600">
+                    <div className="space-y-1" style={{ color: '#ec812f' }}>
                       <p>• Indore</p>
                       <p>• Mumbai</p>
                       <p>• New Delhi</p>

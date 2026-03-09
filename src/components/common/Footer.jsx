@@ -61,7 +61,7 @@ const Footer = () => {
                 <span className="text-xl lg:text-[16px] font-bold" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em', color: '#186087' }}>
                   AVMS & ASSOCIATES
                 </span>
-                <span className="text-xl lg:text-[12px] font-semibold tracking-wider" style={{ color: '#C4D5B2' }}>
+                <span className="text-xl lg:text-[12px] font-semibold tracking-wider" style={{ color: '#0d7a36' }}>
                   CHARTERED ACCOUNTANTS
                 </span>
               </div>
@@ -77,7 +77,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-semibold mb-4" style={{ color: '#023E60' }}>Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4" style={{ color: '#ec812f' }}>Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-700 transition-colors duration-300 flex items-center group" style={{ hover: { color: '#159645' } }}>
@@ -114,7 +114,7 @@ const Footer = () => {
 
           {/* Services */}
           <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-semibold mb-4" style={{ color: '#023E60' }}>Our Services</h4>
+            <h4 className="text-lg font-semibold mb-4" style={{ color: '#ec812f' }}>Our Services</h4>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li className="flex items-start">
                 <span className="mr-2" style={{ color: '#159645' }}>•</span>
@@ -149,7 +149,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-semibold mb-4" style={{ color: '#023E60' }}>Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-4" style={{ color: '#ec812f' }}>Contact Us</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center transition-colors duration-300">
                 <FaPhone className="mr-3 flex-shrink-0" style={{ color: '#159645' }} />

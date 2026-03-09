@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaGraduationCap, FaBriefcase, FaCheckCircle, FaLaptopCode, FaSearch } from 'react-icons/fa';
+import { FaShieldAlt, FaGraduationCap, FaBriefcase, FaCheckCircle, FaLaptopCode, FaSearch, FaLinkedin } from 'react-icons/fa';
 import { leadPartner, teamMembers } from '../../data/teamData';
 
+// Team Section - Updated: 2026-03-10
 const TeamSection = () => {
   // Other team members (excluding the lead partner)
   const otherMembers = teamMembers.slice(1);
@@ -44,6 +45,18 @@ const TeamSection = () => {
                       alt={leadPartner.name}
                       className="w-full h-full object-cover"
                     />
+                    {/* LinkedIn Icon */}
+                    {leadPartner.linkedin && (
+                      <a
+                        href={leadPartner.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute top-3 right-3 bg-white/90 hover:bg-white p-2.5 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 z-10"
+                        aria-label={`${leadPartner.name} LinkedIn Profile`}
+                      >
+                        <FaLinkedin className="text-xl text-[#0077B5]" />
+                      </a>
+                    )}
                   </div>
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-600 text-white px-6 py-2 rounded-full shadow-lg">
                     <span className="font-bold text-sm uppercase tracking-wide">
@@ -141,10 +154,10 @@ const TeamSection = () => {
         </motion.div>
 
         {/* Other Team Members Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
           {otherMembers.map((member, index) => (
             <motion.div
-              key={member.id}
+              key={`team-${member.id}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -158,6 +171,18 @@ const TeamSection = () => {
                     alt={member.name}
                     className="w-full h-full object-cover"
                   />
+                  {/* LinkedIn Icon */}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute top-3 right-3 bg-white/90 hover:bg-white p-2.5 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110"
+                      aria-label={`${member.name} LinkedIn Profile`}
+                    >
+                      <FaLinkedin className="text-xl text-[#0077B5]" />
+                    </a>
+                  )}
                 </div>
 
                 {/* Member Info */}

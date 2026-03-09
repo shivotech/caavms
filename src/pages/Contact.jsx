@@ -2,9 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from '../components/contact/ContactForm';
 import ContactInfo from '../components/contact/ContactInfo';
-import ContactFAQ from '../components/contact/ContactFAQ';
 import BackgroundPattern from '../components/common/BackgroundPattern';
-import Testimonials from '../components/common/Testimonials';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { contactIntro } from '../data/contactData';
 
@@ -87,7 +85,7 @@ const Contact = () => {
             {/* Google Map */}
             <div className="rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg aspect-video">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14665.234567890!2d77.412345!3d23.234567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQVZNUyAmIEFzc29jaWF0ZXMsIEJob3BhbA!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0894715847245!2d77.43164857531944!3d23.235787379046893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43b7187d17cb%3A0xf3ca4f54d11cdd88!2sAVMS%20%26%20ASSOCIATES%2C%20CHARTERED%20ACCOUNTANTS!5e0!3m2!1sen!2sin!4v1709985234567!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -102,7 +100,7 @@ const Contact = () => {
             {/* Map Link */}
             <div className="mt-4 text-center">
               <a
-                href="https://maps.app.goo.gl/8TLLvqJkfPfUfbLS8"
+                href="https://maps.app.goo.gl/Senaf2XzVCVeAvSL8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold transition-colors"
@@ -132,12 +130,6 @@ const Contact = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <Testimonials />
-
-      {/* FAQ Section */}
-      <ContactFAQ />
     </div>
   );
 };

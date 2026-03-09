@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaChevronDown, FaClock, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaChevronDown, FaEnvelope, FaPhone, FaLinkedin, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Navbar from './Navbar';
 import MobileMenu from './MobileMenu';
 import Button from './Button';
@@ -24,15 +24,25 @@ const Header = () => {
             {/* Left Side - Address */}
             <div className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-base" style={{ color: '#4ade80' }} />
-              <span>Office No. 8 6th Floor, Bansal One, Near Rani Kamlapati Station, Bhopal</span>
+              <span>163, Rama Complex, MP Nagar Zone 1, Bhopal</span>
             </div>
 
             {/* Right Side - Info Items */}
             <div className="flex items-center gap-4 lg:gap-6">
-              {/* Working Hours */}
-              <div className="flex items-center gap-2">
-                <FaClock className="text-base" style={{ color: '#4ade80' }} />
-                <span>Mon - Sat 10.00 - 19.00</span>
+              {/* Social Media Icons */}
+              <div className="flex items-center gap-3">
+                <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                  <FaLinkedin size={18} style={{ color: '#4ade80' }} />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                  <FaFacebookF size={18} style={{ color: '#4ade80' }} />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                  <FaInstagram size={18} style={{ color: '#4ade80' }} />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
+                  <FaTwitter size={18} style={{ color: '#4ade80' }} />
+                </a>
               </div>
 
               {/* Email */}
@@ -67,15 +77,15 @@ const Header = () => {
                   <div
                     onMouseEnter={() => setBranchDropdownOpen(true)}
                     onMouseLeave={() => setBranchDropdownOpen(false)}
-                    className="absolute right-0 mt-2 w-40 bg-white text-gray-800 rounded-md shadow-lg py-1 z-50"
+                    className="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-md shadow-lg py-1 z-50"
                   >
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors">
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
                       Indore
                     </div>
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors">
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
                       Mumbai
                     </div>
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors">
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
                       New Delhi
                     </div>
                   </div>
@@ -100,7 +110,7 @@ const Header = () => {
               <span className="text-xl lg:text-[26px] font-bold group-hover:opacity-90 transition-all duration-300" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em', color: '#186087' }}>
                 AVMS & ASSOCIATES
               </span>
-              <span className="text-xl lg:text-[19px] font-semibold tracking-wider" style={{ color: '#C4D5B2' }}>
+              <span className="text-xl lg:text-[19px] font-semibold tracking-wider" style={{ color: '#0d7a36' }}>
                 CHARTERED ACCOUNTANTS
               </span>
             </div>

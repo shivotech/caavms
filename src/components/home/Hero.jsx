@@ -78,7 +78,7 @@ const Hero = () => {
               variants={itemVariants}
               style={{ fontFamily: '"Playfair Display", serif', fontStyle: 'italic' }}
             >
-               Accelerating Value, Magnifying Success
+               <span style={{ color: '#ec812f', fontSize: '1.2em' }}>A</span>ccelerating <span style={{ color: '#ec812f', fontSize: '1.2em' }}>V</span>alue, <span style={{ color: '#ec812f', fontSize: '1.2em' }}>M</span>agnifying <span style={{ color: '#ec812f', fontSize: '1.2em' }}>S</span>uccess
             </motion.p>
 
             {/* Key Credentials Mini Cards - Hidden as per client request */}

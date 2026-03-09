@@ -26,8 +26,8 @@ const Introduction = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ color: '#023E60' }}>
               About AVMS & Associates
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#f59e0b' }}></div>
-            <p className="text-lg md:text-xl text-gray-600">
+            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#ec812f' }}></div>
+            <p className="text-lg md:text-xl" style={{ color: '#ec812f' }}>
               Chartered Accountants | Bhopal, Madhya Pradesh, India
             </p>
           </motion.div>

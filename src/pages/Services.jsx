@@ -72,7 +72,7 @@ const Services = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#023E60' }}>
               Our Services
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#f59e0b' }}></div>
+            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#ec812f' }}></div>
             <p className="text-xl text-gray-700 leading-relaxed">
               Comprehensive accounting, audit, tax, and advisory services tailored to your business needs. 
               Three decades of professional excellence across 22+ industries.

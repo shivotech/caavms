@@ -130,15 +130,15 @@ const Navbar = () => {
                   onClick={() => handleMainCategoryClick(category.slug)}
                   className="w-full px-5 py-3 text-left hover:bg-primary-50 transition-colors flex items-center justify-between group"
                 >
-                  <span className="text-gray-800 font-medium group-hover:text-primary-600">
+                  <span className="text-gray-800 font-medium group-hover:text-secondary-500">
                     {category.mainCategory}
                   </span>
-                  <FaChevronRight className="text-xs text-gray-400 group-hover:text-primary-600" />
+                  <FaChevronRight className="text-xs text-gray-400 group-hover:text-secondary-500" />
                 </button>
                 
                 {/* Sub-menu */}
                 {activeSubMenu === category.id && (
-                  <div className="absolute left-full top-0 ml-1 w-80 bg-white rounded-lg shadow-xl py-2 border border-gray-200">
+                  <div className="absolute right-full top-0 mr-1 w-80 bg-white rounded-lg shadow-xl py-2 border border-gray-200">
                     {category.subServices.map((subService) => (
                       <button
                         key={subService.id}
@@ -146,7 +146,7 @@ const Navbar = () => {
                         className="w-full px-5 py-3 text-left hover:bg-primary-50 transition-colors group"
                       >
                         <div className="flex flex-col">
-                          <span className="text-gray-800 font-medium group-hover:text-primary-600 mb-1">
+                          <span className="text-gray-800 font-medium group-hover:text-secondary-500 mb-1">
                             {subService.name}
                           </span>
                           <span className="text-xs text-gray-500 leading-relaxed">
