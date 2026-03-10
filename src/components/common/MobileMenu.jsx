@@ -157,15 +157,6 @@ const MobileMenu = () => {
                         className="overflow-hidden"
                       >
                         <div className="ml-4 mt-2 space-y-2">
-                          {/* All Services Link */}
-                          <Link
-                            to="/services"
-                            onClick={closeMenu}
-                            className="block px-4 py-2 text-sm text-primary-600 hover:bg-primary-50 rounded-lg font-semibold"
-                          >
-                            View All Services
-                          </Link>
-
                           {/* Categories */}
                           {servicesNavData.map((category) => (
                             <div key={category.id} className="border-l-2 border-gray-200 pl-2">
@@ -192,14 +183,6 @@ const MobileMenu = () => {
                                     className="overflow-hidden"
                                   >
                                     <div className="ml-2 mt-1 space-y-1">
-                                      {/* Main Category Link */}
-                                      <button
-                                        onClick={() => handleCategoryClick(category.slug)}
-                                        className="block w-full text-left px-3 py-2 text-xs text-primary-600 hover:bg-primary-50 rounded font-semibold"
-                                      >
-                                        View All {category.mainCategory}
-                                      </button>
-                                      
                                       {/* Sub-services */}
                                       {category.subServices.map((subService) => (
                                         <button

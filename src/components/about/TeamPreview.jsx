@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaAward, FaBriefcase } from 'react-icons/fa';
+import { FaAward, FaBriefcase, FaLinkedin } from 'react-icons/fa';
 import anupImage from '../../images/about us images/CA ANUP SHRIVASTAVA.jpeg';
 import vinamraImage from '../../images/about us images/CA VINARMA SHRIVASTAVA.jpeg';
 import architImage from '../../images/about us images/CA ARCHIT SAXENA.jpeg';
@@ -14,55 +14,55 @@ const TeamPreview = () => {
       id: 1,
       name: "CA Anup Shrivastava",
       role: "Founding Partner",
-    //   membershipNo: "075270",
       qualifications: ["B.Sc.", "FCA", "DISA (ICA)", "CISA (USA)", "FAFD", "CCAB", "Social Auditor"],
       experience: "30+ years of experience in Information Systems Audit, Forensic Audit, and Banking Audit",
-      image: anupImage
+      image: anupImage,
+      linkedin: "#"
     },
     {
       id: 2,
       name: "CA Sudeep Moitra",
       role: "Senior Partner",
-    //   membershipNo: "400340",
       qualifications: ["B.Com", "FCA", "DISA (ICA)", "CCAB"],
       experience: "21+ years specializing in Statutory Audit, System Audit, and Bank Audit",
-      image: sudeepImage
+      image: sudeepImage,
+      linkedin: "#"
     },
     {
       id: 3,
       name: "CA Sakshi Shrivastava",
       role: "Partner",
-    //   membershipNo: "427741",
       qualifications: ["B.Com", "FCA", "CCAB"],
       experience: "Expert in Income Tax Advisory, GST Compliance, and Corporate Law",
-      image: sakshiImage
+      image: sakshiImage,
+      linkedin: "#"
     },
     {
       id: 4,
-      name: "CA Anuj Shrivastava",
+      name: "CA Archit Saxena",
       role: "Partner",
-    //   membershipNo: "457485",
-      qualifications: ["B.Com", "ACA", "DISA (ICA)", "AICA Level-1"],
-      experience: "Specialist in Tax Planning, Compliance, and Financial Advisory Services",
-      image: anujImage
+      qualifications: ["B.Com", "ACA"],
+      experience: "Expert in due diligence, corporate restructuring, and M&A advisory",
+      image: architImage,
+      linkedin: "#"
     },
     {
       id: 5,
-      name: "CA Vinamra Shrivastava",
+      name: "CA Anuj Shrivastava",
       role: "Partner",
-    //   membershipNo: "457411",
-      qualifications: ["B.Com", "ACA", "AICA Level-1"],
-      experience: "Focused on Audit Services, Corporate Compliance, and Business Advisory",
-      image: vinamraImage
+      qualifications: ["B.Com", "ACA", "DISA (ICA)", "AICA Level-1"],
+      experience: "Specialist in Tax Planning, Compliance, and Financial Advisory Services",
+      image: anujImage,
+      linkedin: "https://www.linkedin.com/in/ca-anuj-jain-182591225"
     },
     {
       id: 6,
-      name: "CA Archit Saxena",
+      name: "CA Vinamra Shrivastava",
       role: "Partner",
-    //   membershipNo: "457412",
-      qualifications: ["B.Com", "ACA"],
-      experience: "Expert in due diligence, corporate restructuring, and M&A advisory",
-      image: architImage
+      qualifications: ["B.Com", "ACA", "AICA Level-1"],
+      experience: "Focused on Audit Services, Corporate Compliance, and Business Advisory",
+      image: vinamraImage,
+      linkedin: "https://www.linkedin.com/in/ca-vinamra-shrivastava-422ab6165"
     }
   ];
 
@@ -97,6 +97,19 @@ const TeamPreview = () => {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
+              {/* LinkedIn Icon - Top Right */}
+              <div className="flex justify-end mb-1">
+                <a
+                  href={member.linkedin}
+                  target={member.linkedin !== '#' ? '_blank' : undefined}
+                  rel={member.linkedin !== '#' ? 'noopener noreferrer' : undefined}
+                  className="bg-white hover:bg-blue-50 p-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-110 border border-gray-200"
+                  aria-label={`${member.name} LinkedIn Profile`}
+                >
+                  <FaLinkedin className="text-lg text-[#0077B5]" />
+                </a>
+              </div>
+
               {/* Profile Image */}
               <div className="flex justify-center mb-4">
                 <div className="relative">
