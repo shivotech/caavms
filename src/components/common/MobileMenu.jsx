@@ -234,8 +234,8 @@ const MobileMenu = () => {
               {/* Contact Info Section */}
               <div className="p-4 mt-4 border-t border-gray-200">
                 {/* Office Address */}
-                <div className="flex items-start gap-3 text-sm py-3">
-                  <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-3">
+                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1.5">Bhopal Office</p>
                     <p className="text-gray-600 leading-relaxed">163, Rama Complex, MP Nagar Zone 1, Bhopal</p>
@@ -243,8 +243,9 @@ const MobileMenu = () => {
                 </div>
 
                 {/* Social Media Icons */}
-                <div className="py-4 border-t border-gray-100">
-                  <div className="flex gap-5 pl-7">
+                <div className="grid grid-cols-[18px_1fr] items-center gap-3 py-4 border-t border-gray-100">
+                  <span aria-hidden="true" />
+                  <div className="flex gap-5">
                     <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
                       <FaLinkedin size={22} style={{ color: '#159645' }} />
                     </a>
@@ -261,8 +262,8 @@ const MobileMenu = () => {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaEnvelope className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
+                  <FaEnvelope className="mt-1.5" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Email</p>
                     <a href="mailto:rohit@jainrs.com" className="text-primary-600 hover:text-primary-700 break-all">
@@ -272,8 +273,8 @@ const MobileMenu = () => {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaPhone className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
+                  <FaPhone className="mt-1.5" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Phone</p>
                     <a href="tel:+919981416845" className="text-primary-600 hover:text-primary-700">
@@ -283,8 +284,8 @@ const MobileMenu = () => {
                 </div>
 
                 {/* Branches */}
-                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
+                <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
+                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-2">Our Branches</p>
                     <div className="space-y-1.5" style={{ color: '#ec812f' }}>
