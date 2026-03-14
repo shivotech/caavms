@@ -107,7 +107,7 @@ const Header = () => {
               className="h-16 w-18 object-contain transition-transform duration-300 self-center"
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-xl sm:text-base lg:text-[26px] font-bold group-hover:opacity-90 transition-all duration-300" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em', color: '#186087' }}>
+              <span className="text-lg sm:text-base lg:text-[26px] font-bold group-hover:opacity-90 transition-all duration-300" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em', color: '#186087' }}>
                 AVMS & ASSOCIATES
               </span>
               <span className="text-sm sm:text-base lg:text-[19px] font-semibold tracking-wide lg:tracking-wider whitespace-nowrap" style={{ color: '#0d7a36' }}>

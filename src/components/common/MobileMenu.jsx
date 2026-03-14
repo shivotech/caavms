@@ -232,50 +232,50 @@ const MobileMenu = () => {
               </nav>
               
               {/* Contact Info Section */}
-              <div className="p-4 mt-4 border-t border-gray-200 space-y-3">
+              <div className="p-4 mt-4 border-t border-gray-200">
                 {/* Office Address */}
-                <div className="flex items-start gap-3 text-sm">
+                <div className="flex items-start gap-3 text-sm py-3">
                   <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
-                    <p className="font-semibold text-gray-900 mb-1">Bhopal Office</p>
-                    <p className="text-gray-600">163, Rama Complex, MP Nagar Zone 1, Bhopal</p>
+                    <p className="font-semibold text-gray-900 mb-1.5">Bhopal Office</p>
+                    <p className="text-gray-600 leading-relaxed">163, Rama Complex, MP Nagar Zone 1, Bhopal</p>
                   </div>
                 </div>
 
                 {/* Social Media Icons */}
-                <div className="flex items-center gap-3 text-sm">
-                  <div className="flex gap-4">
+                <div className="py-4 border-t border-gray-100">
+                  <div className="flex gap-5 pl-7">
                     <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaLinkedin size={24} style={{ color: '#159645' }} />
+                      <FaLinkedin size={22} style={{ color: '#159645' }} />
                     </a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaFacebookF size={24} style={{ color: '#159645' }} />
+                      <FaFacebookF size={22} style={{ color: '#159645' }} />
                     </a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaInstagram size={24} style={{ color: '#159645' }} />
+                      <FaInstagram size={22} style={{ color: '#159645' }} />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaTwitter size={24} style={{ color: '#159645' }} />
+                      <FaTwitter size={22} style={{ color: '#159645' }} />
                     </a>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-center gap-3 text-sm">
-                  <FaEnvelope style={{ color: '#159645' }} />
+                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
+                  <FaEnvelope className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
-                    <p className="font-semibold text-gray-900">Email</p>
-                    <a href="mailto:rohit@jainrs.com" className="text-primary-600 hover:text-primary-700">
+                    <p className="font-semibold text-gray-900 mb-1">Email</p>
+                    <a href="mailto:rohit@jainrs.com" className="text-primary-600 hover:text-primary-700 break-all">
                       rohit@jainrs.com
                     </a>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-center gap-3 text-sm">
-                  <FaPhone style={{ color: '#159645' }} />
+                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
+                  <FaPhone className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
-                    <p className="font-semibold text-gray-900">Phone</p>
+                    <p className="font-semibold text-gray-900 mb-1">Phone</p>
                     <a href="tel:+919981416845" className="text-primary-600 hover:text-primary-700">
                       +91 9981416845
                     </a>
@@ -283,11 +283,11 @@ const MobileMenu = () => {
                 </div>
 
                 {/* Branches */}
-                <div className="flex items-start gap-3 text-sm">
+                <div className="flex items-start gap-3 text-sm py-4 border-t border-gray-100">
                   <FaMapMarkerAlt className="mt-1 flex-shrink-0" style={{ color: '#159645' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-2">Our Branches</p>
-                    <div className="space-y-1" style={{ color: '#ec812f' }}>
+                    <div className="space-y-1.5" style={{ color: '#ec812f' }}>
                       <p>• Indore</p>
                       <p>• Mumbai</p>
                       <p>• New Delhi</p>
