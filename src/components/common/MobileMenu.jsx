@@ -17,6 +17,8 @@ const MobileMenu = () => {
   ];
 
   const navLinksAfterServices = [
+    { path: '/our-team', label: 'Our Team' },
+    { path: '/photo-gallery', label: 'Photo Gallery' },
     { path: '/careers', label: 'Careers' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -115,8 +117,8 @@ const MobileMenu = () => {
                       className={`
                         block px-4 py-3 rounded-lg font-medium transition-all duration-300
                         ${isActive(link.path) 
-                          ? 'bg-primary-600 text-white shadow-md' 
-                          : 'text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                          ? 'bg-secondary-500 text-white shadow-md' 
+                          : 'text-neutral-darkest hover:bg-accent-100 hover:text-secondary-500'
                         }
                       `}
                     >
@@ -137,8 +139,8 @@ const MobileMenu = () => {
                     className={`
                       w-full flex items-center justify-between px-4 py-3 rounded-lg font-medium transition-all duration-300
                       ${(isActive('/services') || location.pathname.startsWith('/services/'))
-                        ? 'bg-primary-600 text-white shadow-md' 
-                        : 'text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                        ? 'bg-secondary-500 text-white shadow-md' 
+                        : 'text-neutral-darkest hover:bg-accent-100 hover:text-secondary-500'
                       }
                     `}
                   >
@@ -162,7 +164,7 @@ const MobileMenu = () => {
                             <div key={category.id} className="border-l-2 border-gray-200 pl-2">
                               <button
                                 onClick={() => toggleCategory(category.id)}
-                                className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg font-medium"
+                                className="w-full flex items-center justify-between px-3 py-2 text-sm text-neutral-darkest hover:bg-accent-100 rounded-lg font-medium"
                               >
                                 <span className="text-left flex-1">{category.mainCategory}</span>
                                 {expandedCategory === category.id ? (
@@ -188,7 +190,7 @@ const MobileMenu = () => {
                                         <button
                                           key={subService.id}
                                           onClick={() => handleSubServiceClick(subService.slug)}
-                                          className="block w-full text-left px-3 py-2 text-xs text-gray-600 hover:bg-gray-50 rounded"
+                                          className="block w-full text-left px-3 py-2 text-xs text-neutral-dark hover:bg-accent-100 rounded"
                                         >
                                           {subService.name}
                                         </button>
@@ -220,8 +222,8 @@ const MobileMenu = () => {
                       className={`
                         block px-4 py-3 rounded-lg font-medium transition-all duration-300
                         ${isActive(link.path) 
-                          ? 'bg-primary-600 text-white shadow-md' 
-                          : 'text-gray-700 hover:bg-primary-50 hover:text-primary-600'
+                          ? 'bg-secondary-500 text-white shadow-md' 
+                          : 'text-neutral-darkest hover:bg-accent-100 hover:text-secondary-500'
                         }
                       `}
                     >
@@ -235,7 +237,7 @@ const MobileMenu = () => {
               <div className="p-4 mt-4 border-t border-gray-200">
                 {/* Office Address */}
                 <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-3">
-                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#159645' }} />
+                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#3FAFBF' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1.5">Bhopal Office</p>
                     <p className="text-gray-600 leading-relaxed">163, Rama Complex, MP Nagar Zone 1, Bhopal</p>
@@ -247,23 +249,23 @@ const MobileMenu = () => {
                   <span aria-hidden="true" />
                   <div className="flex gap-5">
                     <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaLinkedin size={22} style={{ color: '#159645' }} />
+                      <FaLinkedin size={22} style={{ color: '#3FAFBF' }} />
                     </a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaFacebookF size={22} style={{ color: '#159645' }} />
+                      <FaFacebookF size={22} style={{ color: '#3FAFBF' }} />
                     </a>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaInstagram size={22} style={{ color: '#159645' }} />
+                      <FaInstagram size={22} style={{ color: '#3FAFBF' }} />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                      <FaTwitter size={22} style={{ color: '#159645' }} />
+                      <FaTwitter size={22} style={{ color: '#3FAFBF' }} />
                     </a>
                   </div>
                 </div>
 
                 {/* Email */}
                 <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaEnvelope className="mt-1.5" style={{ color: '#159645' }} />
+                  <FaEnvelope className="mt-1.5" style={{ color: '#3FAFBF' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Email</p>
                     <a href="mailto:rohit@jainrs.com" className="text-primary-600 hover:text-primary-700 break-all">
@@ -274,7 +276,7 @@ const MobileMenu = () => {
 
                 {/* Phone */}
                 <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaPhone className="mt-1.5" style={{ color: '#159645' }} />
+                  <FaPhone className="mt-1.5" style={{ color: '#3FAFBF' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-1">Phone</p>
                     <a href="tel:+919981416845" className="text-primary-600 hover:text-primary-700">
@@ -285,10 +287,10 @@ const MobileMenu = () => {
 
                 {/* Branches */}
                 <div className="grid grid-cols-[18px_1fr] items-start gap-3 text-sm py-4 border-t border-gray-100">
-                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#159645' }} />
+                  <FaMapMarkerAlt className="mt-1.5" style={{ color: '#3FAFBF' }} />
                   <div>
                     <p className="font-semibold text-gray-900 mb-2">Our Branches</p>
-                    <div className="space-y-1.5" style={{ color: '#ec812f' }}>
+                    <div className="space-y-1.5" style={{ color: '#3FAFBF' }}>
                       <p>• Indore</p>
                       <p>• Mumbai</p>
                       <p>• New Delhi</p>
@@ -302,7 +304,7 @@ const MobileMenu = () => {
                 <Link
                   to="/contact"
                   onClick={closeMenu}
-                  className="block w-full px-4 py-3 text-center bg-secondary-500 text-white font-semibold rounded-lg hover:bg-secondary-600 transition-colors duration-300 shadow-md"
+                  className="block w-full px-4 py-3 text-center bg-secondary-500 text-white font-semibold rounded-md hover:bg-primary-500 transition-colors duration-300 shadow-md"
                 >
                   Get in Touch
                 </Link>

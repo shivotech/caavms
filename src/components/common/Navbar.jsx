@@ -26,6 +26,8 @@ const Navbar = () => {
   ];
 
   const navLinksAfterServices = [
+    { path: '/our-team', label: 'Our Team' },
+    { path: '/photo-gallery', label: 'Photo Gallery' },
     { path: '/careers', label: 'Careers' },
     { path: '/contact', label: 'Contact' },
   ];
@@ -79,12 +81,12 @@ const Navbar = () => {
         <Link
           key={link.path}
           to={link.path}
-          className="relative px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium"
+          className="relative px-4 py-2 text-neutral-darkest hover:text-secondary-500 transition-colors duration-300 font-medium"
         >
           {link.label}
           {isActive(link.path) && (
             <motion.div
-              className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
+              className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary-500"
               layoutId="navbar-indicator"
               initial={false}
               transition={{
@@ -105,13 +107,13 @@ const Navbar = () => {
       >
         <button
           onClick={handleServicesClick}
-          className="relative px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium flex items-center gap-1"
+          className="relative px-4 py-2 text-neutral-darkest hover:text-secondary-500 transition-colors duration-300 font-medium flex items-center gap-1"
         >
           Services
           <FaChevronDown className="text-xs" />
           {(isActive('/services') || location.pathname.startsWith('/services/')) && (
             <motion.div
-              className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
+              className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary-500"
               layoutId="navbar-indicator"
               initial={false}
               transition={{
@@ -133,7 +135,7 @@ const Navbar = () => {
               >
                 <button
                   onClick={() => handleMainCategoryClick(category.slug)}
-                  className="w-full px-5 py-3 text-left hover:bg-primary-50 transition-colors flex items-center justify-between group"
+                  className="w-full px-5 py-3 text-left hover:bg-accent-100 transition-colors flex items-center justify-between group"
                 >
                   <span className="text-gray-800 font-medium group-hover:text-secondary-500">
                     {category.mainCategory}
@@ -148,14 +150,14 @@ const Navbar = () => {
                       <button
                         key={subService.id}
                         onClick={() => handleSubServiceClick(subService.slug)}
-                        className="w-full px-5 py-3 text-left hover:bg-primary-50 transition-colors group"
+                        className="w-full px-5 py-3 text-left hover:bg-accent-100 transition-colors group"
                       >
                         <div className="flex flex-col">
                           <span className="text-gray-800 font-medium group-hover:text-secondary-500 mb-1">
                             {subService.name}
                           </span>
-                          <span className="text-xs text-gray-500 leading-relaxed">
-                            {subService.description}
+                          <span className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                            {subService.shortDescription || subService.description}
                           </span>
                         </div>
                       </button>
@@ -173,12 +175,12 @@ const Navbar = () => {
         <Link
           key={link.path}
           to={link.path}
-          className="relative px-4 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-300 font-medium"
+          className="relative px-4 py-2 text-neutral-darkest hover:text-secondary-500 transition-colors duration-300 font-medium"
         >
           {link.label}
           {isActive(link.path) && (
             <motion.div
-              className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-600"
+              className="absolute bottom-0 left-0 right-0 h-0.5 bg-secondary-500"
               layoutId="navbar-indicator"
               initial={false}
               transition={{

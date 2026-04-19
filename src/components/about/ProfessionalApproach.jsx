@@ -70,7 +70,7 @@ const ProfessionalApproach = () => {
               <div className="flex items-center gap-2">
                 <FaHandshake className="text-3xl text-accent-400" />
                 <p className="text-blue-200 font-semibold">
-                  AVMS & Associates - Professional Commitment
+                  AVMS & Associates LLP Chartered Accountants - Professional Commitment
                 </p>
               </div>
             </div>

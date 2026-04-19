@@ -18,12 +18,12 @@ const Header = () => {
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
     >
       {/* Top Info Bar - Hidden on mobile */}
-      <div className="hidden lg:block text-white py-2 text-sm" style={{ backgroundColor: '#023E60' }}>
+      <div className="hidden lg:block text-white py-2 text-sm" style={{ backgroundColor: '#0C4A56' }}>
         <div className="container-custom">
           <div className="flex items-center justify-between gap-3">
             {/* Left Side - Address */}
             <div className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-base" style={{ color: '#4ade80' }} />
+              <FaMapMarkerAlt className="text-base" style={{ color: '#3FAFBF' }} />
               <span>163, Rama Complex, MP Nagar Zone 1, Bhopal</span>
             </div>
 
@@ -32,22 +32,22 @@ const Header = () => {
               {/* Social Media Icons */}
               <div className="flex items-center gap-3">
                 <a href="https://www.linkedin.com/company/a-v-m-s-associates/" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                  <FaLinkedin size={18} style={{ color: '#4ade80' }} />
+                  <FaLinkedin size={18} style={{ color: '#3FAFBF' }} />
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                  <FaFacebookF size={18} style={{ color: '#4ade80' }} />
+                  <FaFacebookF size={18} style={{ color: '#3FAFBF' }} />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                  <FaInstagram size={18} style={{ color: '#4ade80' }} />
+                  <FaInstagram size={18} style={{ color: '#3FAFBF' }} />
                 </a>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity">
-                  <FaTwitter size={18} style={{ color: '#4ade80' }} />
+                  <FaTwitter size={18} style={{ color: '#3FAFBF' }} />
                 </a>
               </div>
 
               {/* Email */}
               <div className="flex items-center gap-2">
-                <FaEnvelope className="text-base" style={{ color: '#4ade80' }} />
+                <FaEnvelope className="text-base" style={{ color: '#3FAFBF' }} />
                 <a href="mailto:rohit@jainrs.com" className="text-white hover:text-gray-200 transition-colors">
                   rohit@jainrs.com
                 </a>
@@ -55,7 +55,7 @@ const Header = () => {
 
               {/* Phone */}
               <div className="flex items-center gap-2">
-                <FaPhone className="text-base" style={{ color: '#4ade80' }} />
+                <FaPhone className="text-base" style={{ color: '#3FAFBF' }} />
                 <a href="tel:+919981416845" className="text-white hover:text-gray-200 transition-colors">
                   +91 9981416845
                 </a>
@@ -79,13 +79,13 @@ const Header = () => {
                     onMouseLeave={() => setBranchDropdownOpen(false)}
                     className="absolute left-0 mt-2 w-40 bg-white text-gray-800 rounded-md shadow-lg py-1 z-50"
                   >
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#3FAFBF' }}>
                       Indore
                     </div>
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#3FAFBF' }}>
                       Mumbai
                     </div>
-                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#ec812f' }}>
+                    <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer transition-colors" style={{ color: '#3FAFBF' }}>
                       New Delhi
                     </div>
                   </div>
@@ -103,14 +103,14 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img 
               src={logo} 
-              alt="AVMS Logo" 
+              alt="AVMS & Associates LLP Chartered Accountants Logo" 
               className="h-16 w-18 object-contain transition-transform duration-300 self-center"
             />
             <div className="flex flex-col leading-tight">
-              <span className="text-lg sm:text-base lg:text-[26px] font-bold group-hover:opacity-90 transition-all duration-300" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.05em', color: '#186087' }}>
-                AVMS & ASSOCIATES
+              <span className="text-base sm:text-lg lg:text-[24px] font-bold group-hover:opacity-90 transition-all duration-300" style={{ fontFamily: '"Playfair Display", serif', letterSpacing: '0.04em', color: '#1B6575' }}>
+                AVMS & ASSOCIATES LLP
               </span>
-              <span className="text-sm sm:text-base lg:text-[19px] font-semibold tracking-wide lg:tracking-wider whitespace-nowrap" style={{ color: '#0d7a36' }}>
+              <span className="text-[11px] sm:text-sm lg:text-[17px] font-semibold tracking-wide lg:tracking-[0.2em] whitespace-nowrap" style={{ color: '#1B6575' }}>
                 CHARTERED ACCOUNTANTS
               </span>
             </div>

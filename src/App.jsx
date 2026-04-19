@@ -10,11 +10,13 @@ import ScrollToTop from './components/common/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Team from './pages/Team';
+import OurTeam from './pages/OurTeam';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Industries from './pages/Industries';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
+import PhotoGallery from './pages/PhotoGallery';
 
 function App() {
   return (
@@ -27,9 +29,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/our-team" element={<OurTeam />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/industries" element={<Industries />} />
+            <Route path="/photo-gallery" element={<PhotoGallery />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

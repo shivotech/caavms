@@ -65,7 +65,7 @@ const Industries = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#023E60' }}>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#1B6575' }}>
               Industries We Serve
             </h2>
           </motion.div>
@@ -86,13 +86,13 @@ const Industries = () => {
                   {/* Icon */}
                   <div 
                     className="w-16 h-16 rounded-full flex items-center justify-center mb-3 transition-all duration-300 group-hover:shadow-lg"
-                    style={{ backgroundColor: '#023E60' }}
+                    style={{ backgroundColor: '#1B6575' }}
                   >
                     <IconComponent className="text-2xl text-white transition-transform duration-300 group-hover:scale-110" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-sm font-semibold leading-tight transition-colors duration-300" style={{ color: '#023E60' }}>
+                  <h3 className="text-sm font-semibold leading-tight transition-colors duration-300" style={{ color: '#1B6575' }}>
                     {industry.title}
                   </h3>
                 </motion.div>

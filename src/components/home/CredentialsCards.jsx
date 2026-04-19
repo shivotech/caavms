@@ -54,7 +54,7 @@ const CredentialsCards = () => {
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-700 to-primary-900 bg-clip-text text-transparent mb-4">
             Our Credentials
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#3FAFBF' }}>
             Trusted by businesses and institutions across India
           </p>
         </motion.div>

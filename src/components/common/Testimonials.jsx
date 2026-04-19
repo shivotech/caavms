@@ -56,10 +56,10 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 md:mb-12 px-4"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ color: '#023E60' }}>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ color: '#1B6575' }}>
             Client Testimonials
           </h2>
-          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: '#3FAFBF' }}>
             What our clients say about our professional services
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ const Testimonials = () => {
                 <div className="flex justify-center mb-4 md:mb-6">
                   <div 
                     className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: '#159645' }}
+                    style={{ backgroundColor: '#3FAFBF' }}
                   >
                     <FaQuoteLeft className="text-xl md:text-2xl text-white" />
                   </div>
@@ -112,8 +112,8 @@ const Testimonials = () => {
             <button
               onClick={handlePrev}
               className="absolute -left-4 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-700 hover:text-white transition-all duration-300 hover:scale-110 z-10"
-              style={{ hover: { backgroundColor: '#159645' } }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#159645'}
+              style={{ hover: { backgroundColor: '#3FAFBF' } }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3FAFBF'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
               aria-label="Previous testimonial"
             >
@@ -123,8 +123,8 @@ const Testimonials = () => {
             <button
               onClick={handleNext}
               className="absolute -right-4 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg flex items-center justify-center text-gray-700 hover:text-white transition-all duration-300 hover:scale-110 z-10"
-              style={{ hover: { backgroundColor: '#159645' } }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#159645'}
+              style={{ hover: { backgroundColor: '#3FAFBF' } }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3FAFBF'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
               aria-label="Next testimonial"
             >
@@ -147,7 +147,7 @@ const Testimonials = () => {
                     : 'w-2.5 md:w-3 hover:scale-125'
                 }`}
                 style={{ 
-                  backgroundColor: index === currentIndex ? '#159645' : '#d1d5db'
+                  backgroundColor: index === currentIndex ? '#3FAFBF' : '#d1d5db'
                 }}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

@@ -80,7 +80,7 @@ const Careers = () => {
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-700 to-primary-900 bg-clip-text text-transparent mb-4">
               {whatWeLookFor.heading}
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: '#3FAFBF' }}>
               {whatWeLookFor.description}
             </p>
           </motion.div>
@@ -125,7 +125,7 @@ const Careers = () => {
             <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-700 to-primary-900 bg-clip-text text-transparent mb-4">
               Current Opportunities
             </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: '#ec812f' }}>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: '#3FAFBF' }}>
               Join our team and work on substantive, varied, technically demanding projects
             </p>
           </motion.div>
@@ -154,7 +154,7 @@ const Careers = () => {
                 {howToApply.heading}
               </h2>
               
-              <p className="text-lg leading-relaxed mb-8 text-center" style={{ color: '#ec812f' }}>
+              <p className="text-lg leading-relaxed mb-8 text-center" style={{ color: '#3FAFBF' }}>
                 {howToApply.description}
               </p>
 

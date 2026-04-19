@@ -85,14 +85,14 @@ const Contact = () => {
             {/* Google Map */}
             <div className="rounded-lg overflow-hidden border-2 border-gray-300 shadow-lg aspect-video">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0894715847245!2d77.43164857531944!3d23.235787379046893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43b7187d17cb%3A0xf3ca4f54d11cdd88!2sAVMS%20%26%20ASSOCIATES%2C%20CHARTERED%20ACCOUNTANTS!5e0!3m2!1sen!2sin!4v1709985234567!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.0894715847245!2d77.43164857531944!3d23.235787379046893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43b7187d17cb%3A0xf3ca4f54d11cdd88!2sAVMS%20%26%20ASSOCIATES%20LLP%2C%20CHARTERED%20ACCOUNTANTS!5e0!3m2!1sen!2sin!4v1709985234567!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="AVMS & Associates Location - Bhopal, Madhya Pradesh"
+                title="AVMS & Associates LLP Chartered Accountants Location - Bhopal, Madhya Pradesh"
                 className="w-full h-full"
               ></iframe>
             </div>

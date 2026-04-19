@@ -37,21 +37,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-blue-900 text-white overflow-hidden min-h-[calc(100vh-5rem)] md:min-h-screen flex items-center">
+    <section className="relative bg-[#E2F5F8] text-primary-500 overflow-hidden min-h-[calc(100vh-5rem)] md:min-h-screen flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80&fit=crop" 
           alt="Professional Corporate Office Building" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-900/95 via-primary-800/90 to-blue-900/95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E2F5F8]/96 via-white/94 to-[#E2F5F8]/96"></div>
       </div>
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231B6575' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}></div>
       </div>
 
@@ -65,7 +65,7 @@ const Hero = () => {
           >
             {/* Main Heading */}
             <motion.h1 
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-tight text-primary-500"
               variants={itemVariants}
               style={{ fontFamily: '"Playfair Display", serif' }}
             >
@@ -74,11 +74,11 @@ const Hero = () => {
 
             {/* Tagline */}
             <motion.p 
-              className="text-2xl md:text-3xl lg:text-4xl mb-20 text-blue-100 font-light tracking-wide"
+                className="text-2xl md:text-3xl lg:text-4xl mb-20 text-primary-500 font-light tracking-wide"
               variants={itemVariants}
               style={{ fontFamily: '"Playfair Display", serif', fontStyle: 'italic' }}
             >
-               <span style={{ color: '#ec812f', fontSize: '1.2em' }}>A</span>ccelerating <span style={{ color: '#ec812f', fontSize: '1.2em' }}>V</span>alue, <span style={{ color: '#ec812f', fontSize: '1.2em' }}>M</span>agnifying <span style={{ color: '#ec812f', fontSize: '1.2em' }}>S</span>uccess
+                Accelerating Value, Magnifying Success
             </motion.p>
 
             {/* Key Credentials Mini Cards - Hidden as per client request */}
@@ -114,7 +114,7 @@ const Hero = () => {
                   variant="secondary" 
                   size="lg"
                   icon={<FaPhone />}
-                  className="shadow-2xl hover:shadow-yellow-500/50 transform hover:scale-105 transition-all duration-300 px-10 py-4 text-lg"
+                  className="shadow-xl hover:shadow-xl transform hover:scale-105 transition-all duration-300 px-10 py-4 text-lg"
                 >
                   Get in Touch
                 </Button>

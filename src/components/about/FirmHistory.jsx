@@ -69,7 +69,7 @@ const FirmHistory = () => {
           >
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                AVMS & Associates was founded in Bhopal in 1993 - the same year India was still absorbing the early effects of economic liberalization. In the three decades since, the country's tax laws, corporate regulations, and banking frameworks have been rewritten multiple times. GST replaced an entire ecosystem of indirect taxes. The Companies Act, 2013 replaced a legislation that had been in place since 1956. The Income Tax Act, 1961 has been amended virtually every year. SEBI tightened disclosure requirements. RBI deepened its audit requirements for banks.
+                AVMS & Associates LLP Chartered Accountants was founded in Bhopal in 1993 - the same year India was still absorbing the early effects of economic liberalization. In the three decades since, the country's tax laws, corporate regulations, and banking frameworks have been rewritten multiple times. GST replaced an entire ecosystem of indirect taxes. The Companies Act, 2013 replaced a legislation that had been in place since 1956. The Income Tax Act, 1961 has been amended virtually every year. SEBI tightened disclosure requirements. RBI deepened its audit requirements for banks.
               </p>
 
               <p className="text-lg font-semibold text-primary-700 mb-6">
@@ -95,7 +95,7 @@ const FirmHistory = () => {
             
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 mb-10">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                AVMS & Associates started as a statutory audit practice in Bhopal, primarily serving local businesses and beginning to build its banking audit credentials. As the firm grew, it expanded into forensic audit - brought on by the increasing complexity of financial fraud in the Indian banking sector - and into IT system audits, as core banking technology became central to how banks operate.
+                AVMS & Associates LLP Chartered Accountants started as a statutory audit practice in Bhopal, primarily serving local businesses and beginning to build its banking audit credentials. As the firm grew, it expanded into forensic audit - brought on by the increasing complexity of financial fraud in the Indian banking sector - and into IT system audits, as core banking technology became central to how banks operate.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">

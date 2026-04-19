@@ -54,7 +54,7 @@ const TeamSection = () => {
                         className="absolute top-3 right-3 bg-white/90 hover:bg-white p-2.5 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 z-10"
                         aria-label={`${leadPartner.name} LinkedIn Profile`}
                       >
-                        <FaLinkedin className="text-xl text-[#0077B5]" />
+                        <FaLinkedin className="text-xl text-secondary-500" />
                       </a>
                     )}
                   </div>
@@ -180,7 +180,7 @@ const TeamSection = () => {
                       className="absolute top-3 right-3 bg-white/90 hover:bg-white p-2.5 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110"
                       aria-label={`${member.name} LinkedIn Profile`}
                     >
-                      <FaLinkedin className="text-xl text-[#0077B5]" />
+                      <FaLinkedin className="text-xl text-secondary-500" />
                     </a>
                   )}
                 </div>

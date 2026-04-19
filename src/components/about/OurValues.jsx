@@ -7,7 +7,7 @@ const OurValues = () => {
     {
       icon: FaBullhorn,
       title: "We tell you what we find, not what you want to hear.",
-      description: "Independence is not just a professional requirement under the ICAI Code of Ethics. It is a personal commitment every partner of AVMS & Associates makes to every client. If the accounts have a problem, we say so. If a proposed transaction carries tax or legal risk, we flag it. That directness is what builds trust over decades."
+      description: "Independence is not just a professional requirement under the ICAI Code of Ethics. It is a personal commitment every partner of AVMS & Associates LLP Chartered Accountants makes to every client. If the accounts have a problem, we say so. If a proposed transaction carries tax or legal risk, we flag it. That directness is what builds trust over decades."
     },
     {
       icon: FaBook,

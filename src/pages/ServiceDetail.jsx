@@ -142,7 +142,7 @@ const ServiceDetail = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {serviceData.description}
+            {serviceData.shortDescription || serviceData.description}
           </motion.p>
         </div>
       </section>
@@ -176,8 +176,8 @@ const ServiceDetail = () => {
                           <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-primary-600 transition-colors">
                             {subService.name}
                           </h3>
-                          <p className="text-gray-700 leading-relaxed text-lg">
-                            {subService.description}
+                          <p className="text-gray-700 leading-relaxed text-lg line-clamp-3">
+                            {subService.shortDescription || subService.description}
                           </p>
                         </Link>
                       </motion.div>
@@ -232,7 +232,7 @@ const ServiceDetail = () => {
                           {service.name}
                         </h4>
                         <p className="text-sm text-gray-600 line-clamp-2">
-                          {service.description}
+                          {service.shortDescription || service.description}
                         </p>
                       </Link>
                     ))}

@@ -44,7 +44,7 @@ const ServicesPreview = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#023E60' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#1B6575' }}>
             Our Services
           </h2>
         </motion.div>
@@ -67,7 +67,7 @@ const ServicesPreview = () => {
                   <div className="flex-shrink-0">
                     <div 
                       className="w-14 h-14 rounded-full flex items-center justify-center"
-                      style={{ backgroundColor: '#023E60' }}
+                      style={{ backgroundColor: '#1B6575' }}
                     >
                       <IconComponent className="text-2xl text-white" />
                     </div>
@@ -75,7 +75,7 @@ const ServicesPreview = () => {
 
                   {/* Content */}
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#023E60' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#1B6575' }}>
                       {service.title}
                     </h3>
                     <p className="text-gray-600 text-base leading-relaxed">
@@ -99,7 +99,7 @@ const ServicesPreview = () => {
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-8 py-4 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group"
-            style={{ backgroundColor: '#023E60' }}
+            style={{ backgroundColor: '#1B6575' }}
           >
             <span>View All Services</span>
             <FaArrowRight className="text-lg group-hover:translate-x-1 transition-transform duration-300" />

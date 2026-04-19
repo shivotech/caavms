@@ -67,10 +67,10 @@ const Services = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#023E60' }}>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: '#1B6575' }}>
               Our Services
             </h1>
-            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#ec812f' }}></div>
+            <div className="w-24 h-1 mx-auto mb-6" style={{ backgroundColor: '#3FAFBF' }}></div>
             <p className="text-xl text-gray-700 leading-relaxed">
               Comprehensive accounting, audit, tax, and advisory services tailored to your business needs. 
               Three decades of professional excellence across 22+ industries.
@@ -92,7 +92,7 @@ const Services = () => {
                     ? 'text-white shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
-                style={selectedCategory === category ? { backgroundColor: '#023E60' } : {}}
+                style={selectedCategory === category ? { backgroundColor: '#1B6575' } : {}}
               >
                 {category}
               </button>
@@ -138,7 +138,7 @@ const Services = () => {
                         <div className="flex-shrink-0">
                           <div 
                             className="w-16 h-16 rounded-xl flex items-center justify-center shadow-md"
-                            style={{ backgroundColor: '#023E60' }}
+                            style={{ backgroundColor: '#1B6575' }}
                           >
                             <IconComponent className="text-2xl text-white" />
                           </div>
@@ -146,11 +146,11 @@ const Services = () => {
 
                         {/* Title */}
                         <div className="flex-1">
-                          <h3 className="text-xl font-bold mb-2 leading-tight" style={{ color: '#023E60' }}>
+                          <h3 className="text-xl font-bold mb-2 leading-tight" style={{ color: '#1B6575' }}>
                             {service.title}
                           </h3>
                           {service.category && (
-                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full" style={{ backgroundColor: '#e0f2fe', color: '#023E60' }}>
+                            <span className="inline-block px-3 py-1 text-xs font-semibold rounded-full" style={{ backgroundColor: '#E2F5F8', color: '#1B6575' }}>
                               {service.category}
                             </span>
                           )}
@@ -169,7 +169,7 @@ const Services = () => {
                           handleCardClick(service.slug);
                         }}
                         className="text-sm font-semibold hover:underline transition-all mt-auto self-start text-left"
-                        style={{ color: '#023E60' }}
+                        style={{ color: '#1B6575' }}
                       >
                         <span>Read More</span>
                       </button>
@@ -201,7 +201,7 @@ const Services = () => {
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-              style={{ color: '#023E60' }}
+              style={{ color: '#1B6575' }}
             >
               <FaEnvelope />
               <span>Contact Us Today</span>
