@@ -182,15 +182,15 @@ const TeamPreview = () => {
                   style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
                   <div className="p-6 h-full text-white flex flex-col items-center justify-center text-center">
-                    <p className="text-xs font-bold tracking-[0.22em] uppercase text-cyan-100 mb-3">
+                    <p className="text-xs font-bold tracking-[0.22em] uppercase text-white/90 mb-3">
                       Partner Profile
                     </p>
-                    <h3 className="text-2xl font-bold leading-tight mb-2">{member.name}</h3>
-                    <p className="text-sm font-semibold text-cyan-100 mb-3">{member.role}</p>
+                    <h3 className="text-2xl font-bold leading-tight mb-2 text-white">{member.name}</h3>
+                    <p className="text-sm font-semibold text-white/90 mb-3">{member.role}</p>
 
-                    <div className="space-y-2 text-[13px] leading-relaxed text-blue-50 max-w-[92%]">
+                    <div className="space-y-2 text-[13px] leading-relaxed max-w-[92%]">
                       {member.briefProfile.map((line, idx) => (
-                        <p key={idx}>{line}</p>
+                        <p key={idx} className="text-white">{line}</p>
                       ))}
                     </div>
                   </div>
